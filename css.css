@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #ff4f70;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.heart {
+    font-size: 60px;
+    animation: heartbeat 1.3s infinite;
+    color: #ff4f70;
+    margin-top: 10px;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.3); }
+    50% { transform: scale(1); }
+    70% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* NEW SECTION STYLES */
+.message-section {
+    background: rgba(255, 255, 255, 0.8);
+    width: 420px;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    animation: fadeIn 2s ease;
+}
+
+.message-section h2 {
+    color: #ff4f70;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.message-section p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(255, 182, 193, 0.4); /* soft pink border */
+}
